@@ -1,0 +1,7 @@
+El fichero __init__.py, vacío, se usa para poder hacer:
+ - from mypackage import arithmetics
+
+El fichero 'init' es esencial para que el directorio sea reconocido por Python como un paquete.
+Realmente no es necesario pero el no ponerlo hace que se comporte como un 'namespace package'
+ en vez de un 'regular package' y eso puede ocasionar problemas.
+Revisar https://stackoverflow.com/a/48804718/4817947 para una explicación más extensa.
